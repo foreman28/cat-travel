@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- шапка -->
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li> <a href="index.html"><i class="fas fa-home"></i>главная</a></li>
+                    <li><a href="blog.html"><i class="fas fa-newspaper"></i>блог</a>
+                        <ul class="drop">
+                            <li><a href="post1.html">пост 1</a></li>
+                            <li><a href="post2.html">пост 2</a></li>
+                            <li><a href="post3.html">пост 3</a></li>
+                            <li><a href="post4.html">пост 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="form.html"><i class="fas fa-comments"></i>отзывы</a></li>
+                    <li><a href="media.html"><i class="fas fa-photo-video"></i>медиа</a></li>
+                    <li><a href="map.html"><i class="fas fa-map-marked"></i>карта</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- основной контент -->
+    <main>
+        <div class="entry">
+            <div class="idea">
+                <h1>Отзывы о путешествиях</h1>
+                <p>Когда от постоянных зрителей посыпалось огромное количество откликов и вопросов, мы поняли, что всё не зря, и то что мы делаем людям очень нужно и интересно. Благодаря им и родилась идея создать сайт, на котором удастся собрать всю самую важную информацию и поделиться всем накопленным опытом. Пишите свои отзывы про путешествия, отели и страны.</p>
+
+                <form class="form" action="#" >
+                    <fieldset>
+                        <legend>Личные данные</legend>
+                        <label for="id">ID отзыва</label>
+                        <input type="text" id="id">
+                        
+                        <label for="name">Имя путешественника*</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Ваш email*</label>
+                        <input type="email" id="email" required>
+
+                        <label for="tel">Ваш телефон</label>
+                        <input type="tel" id="tel">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Отзыв о поездке</legend>
+                        <label for="country">Страна визита</label>
+                        <input type="text" id="country">
+
+                        <label for="city">Город</label>
+                        <input type="text" id="city">
+
+                        <label for="reiting">Оценка поездки</label>
+                        <input type="range" id="reiting" min="0" max="10">
+
+                        <label for="text">Текст отзыва*</label>
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Оценка отеля</legend>
+                        <label for="hotel">Название отеля</label>
+                        <input type="text" id="hotel">
+
+                        <label for="date">Дата заезда</label>
+                        <input type="date" id="date">
+
+                        <label for="color">Фирменный цвет</label>
+                        <input type="date" id="color" value="#2c3e50">
+
+                        <label for="food">Оценка обедов</label>
+                        <select type="food" id="food">
+                            <option value="f1">Очень вкусно</option>
+                            <option value="f2">Вкусно</option>
+                            <option value="f3">Не вкусно</option>
+                            <option value="f4">Отвратительно</option>
+                        </select>
+
+                        <label for="food">Что понравилось в отеле</label>
+                        <select type="food" id="food" size="5" multiple>
+                            <option value="f10">Уборка </option>
+                            <option value="f20">Персонал </option>
+                            <option value="f30">Еда в ресторане</option>
+                            <option value="f40">Интерьер</option>
+                            <option value="f40">Все перечисленное</option>
+                        </select>
+
+                        <div class="buttons">
+                            <button type="submit"></button>
+                            <button type="reset"></button>
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    <!-- футер -->
+    <footer>
+        <div class="f-info">
+            <img src="img/kotik.jpg" alt="cat">
+            <span>Пишите, cat-energy@gmail.ry</span>
+        </div>
+        <ul class="social">
+            <li><a href="#"><i><i class="fab fa-facebook-square"></i></i></a></li>
+            <li><a href="#"><i><i class="fab fa-facebook-square"></i></i></a></li>
+            <li><a href="#"><i><i class="fab fa-facebook-square"></i></i></a></li>
+            <li><a href="#"><i><i class="fab fa-facebook-square"></i></i></a></li>
+            <li><a href="#"><i><i class="fab fa-facebook-square"></i></i></a></li>
+        </ul>
+        <div class="copyright">
+            <p>2020-2022 Cat Energy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
